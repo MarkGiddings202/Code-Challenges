@@ -12,7 +12,9 @@ var romanToInt = function (s) {
   // create a counter to store our value
   let results = 0;
 
+  console.log(romanNum)
   for (let i = 0; i < s.length; i += 1) {
+
     // determin if the roman numeral infront is less than the number in front of it.
     if (romanNum[s[i]] < romanNum[s[i + 1]]) {
         // if so then we subtract from our count
@@ -23,7 +25,7 @@ var romanToInt = function (s) {
     }
   }
   // return our results counter
-  return results;
+//   return results;
 };
 
 console.log(romanToInt("III"));
