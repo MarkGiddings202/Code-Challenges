@@ -1,8 +1,5 @@
 var reverseWords = function(s) {
-    let newStr = s.split(" ").reverse('').join(' ').trim()
-    
-
-    console.log(newStr)
+    return s.split(" ").filter(char=> char !== '').reverse().join(' ')
 };
 
 console.log(reverseWords("the sky is blue "))
